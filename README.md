@@ -1,4 +1,4 @@
 refocus
 =======
 
-I kindly suggest to refocus.
+You are welcome to refocus.
