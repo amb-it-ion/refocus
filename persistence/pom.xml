@@ -41,46 +41,46 @@
 					<mainClass>com.amb_it_ion.refocus.persistence.Server</mainClass>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>aspectj-maven-plugin</artifactId>
-				<version>1.6</version>
+<!-- 			<plugin> -->
+<!-- 				<groupId>org.codehaus.mojo</groupId> -->
+<!-- 				<artifactId>aspectj-maven-plugin</artifactId> -->
+<!-- 				<version>1.6</version> -->
 				
-				<configuration>
-					<weaveDependencies>
-						<weaveDependency>
-							<groupId>com.amb_it_ion</groupId>
-							<artifactId>application</artifactId>
-						</weaveDependency>
-					</weaveDependencies>
-					<outxml>true</outxml>
-					<verbose>true</verbose>
-					<showWeaveInfo>true</showWeaveInfo>
+<!-- 				<configuration> -->
+<!-- 					<weaveDependencies> -->
+<!-- 						<weaveDependency> -->
+<!-- 							<groupId>com.amb_it_ion</groupId> -->
+<!-- 							<artifactId>application</artifactId> -->
+<!-- 						</weaveDependency> -->
+<!-- 					</weaveDependencies> -->
+<!-- 					<outxml>true</outxml> -->
+<!-- 					<verbose>true</verbose> -->
+<!-- 					<showWeaveInfo>true</showWeaveInfo> -->
 
-					<sources>
-						<source>
-							<basedir>src/main/java</basedir>
-							<includes>
-								<include>**/*.java</include>
-								<include>**/*.aj</include>
-							</includes>
-						</source>
-					</sources>
+<!-- 					<sources> -->
+<!-- 						<source> -->
+<!-- 							<basedir>src/main/java</basedir> -->
+<!-- 							<includes> -->
+<!-- 								<include>**/*.java</include> -->
+<!-- 								<include>**/*.aj</include> -->
+<!-- 							</includes> -->
+<!-- 						</source> -->
+<!-- 					</sources> -->
 					
 					
-				<source>1.8</source>
-				<target>1.8</target>
+<!-- 				<source>1.8</source> -->
+<!-- 				<target>1.8</target> -->
 				
-				</configuration>
+<!-- 				</configuration> -->
 				
-				<executions>
-					<execution>
-						<goals>
-							<goal>compile</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
+<!-- 				<executions> -->
+<!-- 					<execution> -->
+<!-- 						<goals> -->
+<!-- 							<goal>compile</goal> -->
+<!-- 						</goals> -->
+<!-- 					</execution> -->
+<!-- 				</executions> -->
+<!-- 			</plugin> -->
 		</plugins>
 	</build>
 
