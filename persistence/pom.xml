@@ -8,6 +8,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jetty.version>9.0.5.v20130815</jetty.version>
+		<aspectj.runtime.version>1.8.0</aspectj.runtime.version>
 	</properties>
 
 	<parent>
@@ -45,7 +46,7 @@
 <!-- 				<groupId>org.codehaus.mojo</groupId> -->
 <!-- 				<artifactId>aspectj-maven-plugin</artifactId> -->
 <!-- 				<version>1.6</version> -->
-				
+
 <!-- 				<configuration> -->
 <!-- 					<weaveDependencies> -->
 <!-- 						<weaveDependency> -->
@@ -67,28 +68,77 @@
 <!-- 						</source> -->
 <!-- 					</sources> -->
 					
-					
-<!-- 				<source>1.8</source> -->
-<!-- 				<target>1.8</target> -->
-				
+<!-- 					<source>1.8</source> -->
+<!-- 					<target>1.8</target> -->
+<!-- 					<complianceLevel>1.8</complianceLevel> -->
+
 <!-- 				</configuration> -->
-				
+
 <!-- 				<executions> -->
 <!-- 					<execution> -->
+<!-- 						<id>compile_with_aspectj</id> -->
 <!-- 						<goals> -->
 <!-- 							<goal>compile</goal> -->
+<!-- 						</goals> -->
+<!-- 					</execution> -->
+<!-- 					<execution> -->
+<!-- 						<id>test-compile_with_aspectj</id> -->
+<!-- 						<goals> -->
+<!-- 							<goal>test-compile</goal> -->
 <!-- 						</goals> -->
 <!-- 					</execution> -->
 <!-- 				</executions> -->
 <!-- 			</plugin> -->
 		</plugins>
+		<pluginManagement>
+			<plugins>
+				<!--This plugin's configuration is used to store Eclipse m2e settings 
+					only. It has no influence on the Maven build itself. -->
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>
+											org.codehaus.mojo
+										</groupId>
+										<artifactId>
+											aspectj-maven-plugin
+										</artifactId>
+										<versionRange>
+											[1.6,)
+										</versionRange>
+										<goals>
+											<goal>compile</goal>
+											<goal>test-compile</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore></ignore>
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 	</build>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjrt</artifactId>
-			<version>1.8.0</version>
+			<version>${aspectj.runtime.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjtools</artifactId>
+			<version>${aspectj.runtime.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
