@@ -1,5 +1,7 @@
 package com.amb_it_ion.refocus.view;
 
+import com.amb_it_ion.refocus.external.jack.impl.view.ViewJack;
+import com.amb_it_ion.refocus.external.plug.api.ViewPlug;
 import com.amb_it_ion.refocus.view.ui.MainView;
 import com.amb_it_ion.refocus.view.ui.StartView;
 import com.vaadin.annotations.Theme;
@@ -48,5 +50,7 @@ public class DevScoreUI extends UI {
         // Create and register the views
         getNavigator().addView("", new StartView(  getNavigator() ));
         getNavigator().addView(MAINVIEW, new MainView( getNavigator() ));
+        
+        new ViewJack().ready();
     }
 }

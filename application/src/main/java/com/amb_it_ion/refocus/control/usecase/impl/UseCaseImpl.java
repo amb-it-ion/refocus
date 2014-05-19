@@ -2,6 +2,9 @@ package com.amb_it_ion.refocus.control.usecase.impl;
 
 import java.util.Collection;
 
+import rx.Observable;
+
+import com.amb_it_ion.refocus.business.data.NavigationSection;
 import com.amb_it_ion.refocus.control.flow.api.Flow;
 import com.amb_it_ion.refocus.control.flow.impl.navigation.NavigationFlow;
 import com.amb_it_ion.refocus.control.usecase.api.UseCase;
@@ -85,8 +88,5 @@ public class UseCaseImpl implements UseCase {
 	
 
 	
-	/*
-	 * Behaviour
-	 */
 
 }

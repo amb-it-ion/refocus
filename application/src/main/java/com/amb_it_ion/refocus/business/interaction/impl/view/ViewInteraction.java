@@ -4,6 +4,7 @@ import java.util.Collection;
 
 import rx.Observable;
 
+import com.amb_it_ion.refocus.business.data.NavigationSection;
 import com.amb_it_ion.refocus.business.interaction.api.Interaction;
 
 public interface ViewInteraction<T> extends Interaction {
