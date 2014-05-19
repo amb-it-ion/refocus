@@ -1,3 +1,6 @@
 application/target/
 view/target/
 persistence/target/
+view/src/main/webapp/VAADIN/gwt-unitCache/
+view/src/main/webapp/VAADIN/widgetsets/WEB-INF/deploy/
+view/src/main/webapp/VAADIN/widgetsets/com.amb_it_ion.refocus.view.AppWidgetSet/
