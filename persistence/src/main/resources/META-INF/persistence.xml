@@ -5,6 +5,7 @@
 
 		<!-- List all entity classes here -->
 		<class>com.amb_it_ion.refocus.persistence.UserEntity</class>
+		<class>com.amb_it_ion.refocus.persistence.NavigationSectionEntity</class>
 
 		<exclude-unlisted-classes>true</exclude-unlisted-classes>
 		<shared-cache-mode>NONE</shared-cache-mode>

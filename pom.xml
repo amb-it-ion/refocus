@@ -10,11 +10,14 @@
 		<module>application</module>
 		<module>view</module>
 		<module>persistence</module>
+		<module>single</module>
 	</modules>
+	
 	<properties>
 		<maven.compiler.plugin.version>2.3.2</maven.compiler.plugin.version>
 		<jre.source.version>1.8</jre.source.version>
 		<jre.target.version>1.8</jre.target.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<build>
